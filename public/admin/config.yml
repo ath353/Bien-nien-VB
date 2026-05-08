@@ -1,0 +1,80 @@
+backend:
+  name: github
+  repo: GITHUB_USERNAME/REPO_NAME   # ← đổi thành repo của bạn, vd: ath353/bien-nien
+  branch: main
+  base_url: https://biennien.vercel.app
+  auth_endpoint: /api/auth
+
+media_folder: public/images
+public_folder: /images
+
+locale: vi
+
+collections:
+  - name: posts
+    label: Bài viết
+    label_singular: Bài viết
+    folder: src/posts
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - label: Tiêu đề
+        name: title
+        widget: string
+        hint: Tiêu đề bài viết, nên ngắn gọn và hấp dẫn
+
+      - label: Slug (URL)
+        name: slug
+        widget: string
+        hint: "Ví dụ: nhat-ban-vuon-len-tu-tro-tan (chữ thường, không dấu, dùng gạch ngang)"
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Chỉ dùng chữ thường a-z, số và gạch ngang']
+
+      - label: Ngày đăng
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: DD/MM/YYYY
+        time_format: false
+
+      - label: Danh mục
+        name: category
+        widget: select
+        options:
+          - Lịch sử Việt Nam
+          - Đế chế & Quốc gia
+          - Thương hiệu & Công ty
+          - Thể thao & CLB
+          - Sự kiện lịch sử
+
+      - label: Tags
+        name: tags
+        widget: list
+        hint: Nhập từng tag rồi nhấn Enter
+
+      - label: Tóm tắt (excerpt)
+        name: excerpt
+        widget: text
+        hint: 1-2 câu mô tả ngắn, hiển thị trên trang chủ
+
+      - label: Thời gian đọc (phút)
+        name: readTime
+        widget: number
+        default: 5
+        value_type: int
+        min: 1
+        max: 60
+
+      - label: Ảnh thumbnail
+        name: thumbnail
+        widget: image
+        required: false
+        hint: Tỉ lệ 16:9 cho đẹp nhất
+
+      - label: Nội dung
+        name: body
+        widget: markdown

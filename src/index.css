@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0d0a;
+  color: #e8e0d0;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography cho bài viết */
+.prose-biennien h1,
+.prose-biennien h2,
+.prose-biennien h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #f5f0e8;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.prose-biennien h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #2a2420;
+  padding-bottom: 0.4rem;
+}
+
+.prose-biennien h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d4c9b5;
+}
+
+.prose-biennien p {
+  color: #c8bfaf;
+  line-height: 1.9;
+  font-size: 1.0625rem;
+}
+
+.prose-biennien a {
+  color: #c9a84c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-biennien blockquote {
+  border-left: 3px solid #c9a84c;
+  padding-left: 1.25rem;
+  color: #c9a84c;
+  font-style: italic;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.prose-biennien strong {
+  color: #f5f0e8;
+}
+
+.prose-biennien img {
+  border-radius: 6px;
+  margin: 2rem auto;
+}
+
+.prose-biennien hr {
+  border-color: #2a2420;
+  margin: 2.5rem 0;
+}
