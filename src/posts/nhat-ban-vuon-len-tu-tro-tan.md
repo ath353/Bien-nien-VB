@@ -2,7 +2,7 @@
 title: "Nhật Bản: Vươn Lên Từ Tro Tàn"
 slug: nhat-ban-vuon-len-tu-tro-tan
 date: 2024-01-15
-category: Đế chế & Quốc gia
+category: Đế chế và Quốc gia
 tags: [Nhật Bản, Thế chiến II, Phục hưng kinh tế, Châu Á]
 excerpt: Năm 1945, hai quả bom nguyên tử san phẳng Hiroshima và Nagasaki. Chưa đến 30 năm sau, Nhật Bản trở thành nền kinh tế lớn thứ hai thế giới. Đây là câu chuyện về một dân tộc không bao giờ chịu thua.
 readTime: 8

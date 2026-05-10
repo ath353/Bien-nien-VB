@@ -6,9 +6,9 @@ export const APP_CONFIG = {
 
   categories: [
     "Lịch sử Việt Nam",
-    "Lịch sử thế giới",
-    "Thương hiệu & Công ty",
-    "Thể thao & CLB",
+    "Đế chế và Quốc gia",
+    "Thương hiệu và Công ty",
+    "Thể thao và CLB",
     "Sự kiện lịch sử",
   ],
 

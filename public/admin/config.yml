@@ -45,11 +45,11 @@ collections:
         name: category
         widget: select
         options:
-          - Lịch sử Việt Nam
-          - Đế chế & Quốc gia
-          - Thương hiệu & Công ty
-          - Thể thao & CLB
-          - Sự kiện lịch sử
+          - "Lịch sử Việt Nam"
+          - "Đế chế và Quốc gia"
+          - "Thương hiệu và Công ty"
+          - "Thể thao và CLB"
+          - "Sự kiện lịch sử"
 
       - label: Tags
         name: tags
