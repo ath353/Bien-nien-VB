@@ -8,5 +8,98 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "ath353/Bien-nien-VB",
+            branch: "main",
+            base_url: "https://biennien.vercel.app",
+            auth_endpoint: "/api/auth",
+          },
+          media_folder: "public/images",
+          public_folder: "/images",
+          locale: "vi",
+          collections: [
+            {
+              name: "posts",
+              label: "Bài viết",
+              label_singular: "Bài viết",
+              folder: "src/posts",
+              create: true,
+              delete: true,
+              slug: "{{slug}}",
+              extension: "md",
+              format: "frontmatter",
+              editor: { preview: false },
+              fields: [
+                {
+                  label: "Tiêu đề",
+                  name: "title",
+                  widget: "string",
+                },
+                {
+                  label: "Slug (URL)",
+                  name: "slug",
+                  widget: "string",
+                  hint: "Ví dụ: nhat-ban-vuon-len-tu-tro-tan",
+                },
+                {
+                  label: "Ngày đăng",
+                  name: "date",
+                  widget: "datetime",
+                  format: "YYYY-MM-DD",
+                  date_format: "DD/MM/YYYY",
+                  time_format: false,
+                },
+                {
+                  label: "Danh mục",
+                  name: "category",
+                  widget: "select",
+                  options: [
+                    "Lịch sử Việt Nam",
+                    "Đế chế và Quốc gia",
+                    "Thương hiệu và Công ty",
+                    "Thể thao và CLB",
+                    "Sự kiện lịch sử",
+                  ],
+                },
+                {
+                  label: "Tags",
+                  name: "tags",
+                  widget: "list",
+                },
+                {
+                  label: "Tóm tắt",
+                  name: "excerpt",
+                  widget: "text",
+                },
+                {
+                  label: "Thời gian đọc (phút)",
+                  name: "readTime",
+                  widget: "number",
+                  default: 5,
+                  value_type: "int",
+                  min: 1,
+                  max: 60,
+                },
+                {
+                  label: "Ảnh thumbnail",
+                  name: "thumbnail",
+                  widget: "image",
+                  required: false,
+                },
+                {
+                  label: "Nội dung",
+                  name: "body",
+                  widget: "markdown",
+                },
+              ],
+            },
+          ],
+        },
+      });
+    </script>
   </body>
 </html>
