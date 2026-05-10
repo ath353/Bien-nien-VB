@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: GITHUB_USERNAME/REPO_NAME   # ← đổi thành repo của bạn, vd: ath353/bien-nien
+  repo: ath353/Bien-nien-VB
   branch: main
   base_url: https://biennien.vercel.app
   auth_endpoint: /api/auth
