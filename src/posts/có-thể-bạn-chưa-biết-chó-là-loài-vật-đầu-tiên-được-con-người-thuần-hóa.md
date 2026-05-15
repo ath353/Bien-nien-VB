@@ -9,7 +9,7 @@ excerpt: Loài động vật đã song hành rất lâu cùng với con người
 readTime: 5
 thumbnail: https://cdn2.tuoitre.vn/thumb_w/480/2020/2/11/grey-wolf-1024x782-158139334682819451214.jpg
 ---
-<!--StartFragment-->
+
 
 **Cái chết đã gõ cửa tổ ấm của nó ba lần, nhưng chưa lần nào thành công.**
 
@@ -70,5 +70,3 @@ Con chó đang nằm dưới chân bạn lúc này.
 Không phải bạn chọn nó. Tổ tiên của nó đã chọn chúng ta trước — từ 40.000 năm trước.
 
 *Ai mới là chủ, ai mới là thú nuôi — đôi khi thật khó nói.*
-
-<!--EndFragment-->
